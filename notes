@@ -1,0 +1,16 @@
+<section id="main">
+  <div class="main_rectangle">
+    <h1 class="typetext"></h1>
+  </div>
+</section>
+
+#main { display: flex; font-family: $defolt; margin: 200px 0px 300px 0px; width:
+100%; height: 100%; } .main_rectangle { margin: 0 auto; background-color:
+#deecff; border: thick double #185ee0; padding: 50px; box-shadow: 0px 0px 35px
+#71a3ff; border-radius: 25px; } .typetext { width: 22.5ch; font-size: 48px;
+animation: cursor 0.75s step-end infinite, printed_text 5s steps(29);
+border-right: 3px solid white; /* рисуем курсор */ white-space: nowrap; /* не
+переносить текст на другую строку */ overflow: hidden; /* скрываем переполнение
+контентом */ } @keyframes cursor { 0% { border-color: white; } 50% {
+border-color: transparent; } 100% { border-color: white; } } @keyframes
+printed_text { from { width: 0; } }
