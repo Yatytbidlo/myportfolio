@@ -124,3 +124,13 @@ window.addEventListener("scroll", () => {
     scrollToTopButton.style.display = "none";
   }
 });
+
+const form = document.getElementById("form")
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault()
+
+  alert('Ваша заявка отправлена!')
+
+  form.reset()
+})
